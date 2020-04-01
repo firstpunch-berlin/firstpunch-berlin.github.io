@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #FFFCFA;
+    --text-color: #402000;
+    --link-color: #FF8000;
+    --font-logo: 'Julius Sans One', sans-serif;
+    --font-headlines: 'Josefin Sans', sans-serif;
+    --font-text: 'Montserrat', sans-serif;
+    --breakpoint-tablet : min
+}
+
+html {
+    font-size: medium;
+    line-height: 145%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+hr {
+    color: var(--text-color);
+}
+
+.img-responsive {
+    height: auto;
+    width: 100%;
+}
+
+.headline--redundant {
+    display: none;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 2rem 2rem 0 2rem;
+    width: 100%;
+}
+
+.header__logo {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.header__heading {
+    color: var(--text-color);
+    font-family: var(--font-logo);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header__text {
+    color: var(--text-color);
+    font-family: var(--font-logo);
+}
+
+.header__nav {
+    width: 100%;
+}
+
+.header__nav__list {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 100%;
+}
+
+.header__nav__item {
+    display: block;
+}
+
+.header__nav__link {
+    color: var(--link-color);
+    font-family: var(--font-logo);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.main__section {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.main__section__h1 {
+    color: var(--text-color);
+    font-family: var(--font-headlines);
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.main__section__h2 {
+    color: var(--text-color);
+    font-family: var(--font-headlines);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.main__section__row {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.row--margin-bottom {
+    margin-bottom: 1.75rem;
+}
+
+.column__headline {
+    color: var(--text-color);
+    font-family: var(--font-headlines);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+.main__section__column-left,
+.main__section__column-right {
+    color: var(--text-color);
+    font-family: var(--font-text);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.about__figure {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.about__figcaption {
+    align-self: center;
+    display: block;
+    color: var(--text-color);
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.contact__link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.footer { 
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: var(--font-text);
+    width: 100%;
+}
+
+.main__section_p {
+    color: var(--text-color);
+    font-family: var(--font-text);
+    margin-bottom: 1rem;
+}
+
+.footer__social-links {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.social-link {
+    align-items: center;
+    color: var(--link-color);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon {
+    display: block;
+    height: auto;
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+.legal__link {
+    color: var(--link-color);
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .main__section__row {
+        flex-flow: row nowrap;
+    }
+
+    .headline--redundant {
+        visibility: hidden;
+    }
+
+    .main__section__column-left {
+        margin: 0 auto 1rem 0;
+        width: 45%;
+    }
+
+    .main__section__column-right {
+        margin: 0 0 1rem auto;
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .img-about {
+        align-self: center;
+        width: 60%;
+    }
+}

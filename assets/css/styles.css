@@ -86,7 +86,6 @@ hr {
 .header__nav__link {
     color: var(--link-color);
     font-family: var(--font-logo);
-    font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -203,6 +202,16 @@ hr {
     color: var(--link-color);
     font-size: 0.8rem;
     text-decoration: none;
+}
+
+@media (min-width: 667px) {
+    .header__nav__link {
+        color: var(--link-color);
+        font-family: var(--font-logo);
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
 }
 
 @media (min-width: 768px) {

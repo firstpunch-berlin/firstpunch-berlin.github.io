@@ -27,6 +27,10 @@ hr {
     color: var(--text-color);
 }
 
+p {
+    margin: 0.5rem 0;
+}
+
 .img-responsive {
     height: auto;
     width: 100%;

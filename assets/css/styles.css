@@ -5,8 +5,8 @@
 }
 
 :root {
-    --bg-color: #FFFCFA;
-    --text-color: #402000;
+    --bg-color: #ededed;
+    --text-color: #1c1c1c;
     --link-color: #FF8000;
     --font-logo: 'Julius Sans One', sans-serif;
     --font-headlines: 'Josefin Sans', sans-serif;
@@ -41,7 +41,7 @@ hr {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -86,15 +86,59 @@ hr {
 .header__nav__link {
     color: var(--link-color);
     font-family: var(--font-logo);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
+}
+
+.main__parallax-image-1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("../img/stick_1.jpg");
+    background-attachment: fixed;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__parallax-image-2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    background: url("../img/thomas_flo_bw.jpg");
+    background-attachment: fixed;
+    background-position: 65% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__parallax-image-3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    background: url("../img/stick_2.jpg");
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-image__headline {
+    color: var(--bg-color);
+    font-family: var(--font-headlines);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
 }
 
 .main__section {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 2rem;
-    padding: 0 2rem;
+    margin-top: 0.5rem;
     width: 100%;
 }
 
@@ -117,6 +161,38 @@ hr {
 .main__section__row {
     display: flex;
     flex-flow: column nowrap;
+    padding: 0 1rem;
+}
+
+.main__section .column__headline {
+    padding-left: 1rem;
+}
+
+#contact .column__headline,
+.main__section__column-left .column__headline,
+.main__section__column-right .column__headline {
+    padding-left: 0;
+}
+
+.main__section__row--dark,
+.main__section__row--dark .main__section__column-left,
+.main__section__row--dark .main__section__column-right,
+.main__section__row--dark .column__headline,
+.column__headline.column-headline--dark {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.column__headline.column-headline--dark {
+    margin: 0;
+    padding: 1rem 0 0.5rem 1rem;
+}
+
+.main__section__column {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 .row--margin-bottom {
@@ -156,6 +232,16 @@ hr {
     margin: 0.5rem 0;
 }
 
+.main__contact-address {
+    font-family: var(--font-text);
+    font-style: normal;
+    text-align: center;
+}
+
+.main__section_p.contact-email {
+    margin-bottom: 1.5rem;
+}
+
 .contact__link {
     color: var(--link-color);
     text-decoration: none;
@@ -175,11 +261,12 @@ hr {
     margin-bottom: 1rem;
 }
 
-.footer__social-links {
+.contact__social-links {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
-    margin: 1.5rem 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 1.5rem 0 0 0;
     width: 100%;
 }
 
@@ -187,7 +274,9 @@ hr {
     align-items: center;
     color: var(--link-color);
     display: flex;
+    font-family: var(--font-text);
     justify-content: center;
+    margin: 0.5rem 0;
     text-decoration: none;
 }
 
@@ -209,8 +298,36 @@ hr {
         color: var(--link-color);
         font-family: var(--font-logo);
         font-size: 1.1rem;
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none;
+    }
+
+    .main__parallax-image-1 {
+        background-position: 100% 50%;
+    }
+    
+    .main__parallax-image-2 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 60vh;
+        background: url("../img/thomas_flo_bw.jpg");
+        background-attachment: fixed;
+        background-position: 65% center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main__parallax-image-3 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 60vh;
+        background: url("../img/stick_2.jpg");
+        background-attachment: fixed;
+        background-position: 70% center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -235,13 +352,38 @@ hr {
 }
 
 @media (min-width: 1024px) {
-    .main {
+    /* .main {
         margin: 0 auto;
         width: 80%;
+    } */
+
+    .main__parallax-image-2 {
+        min-height: 100vh;
     }
 
     .img-about {
         align-self: center;
         width: 60%;
+    }
+
+    .main__section {
+        padding: 0;
+    }
+
+    .main__section .column__headline {
+        padding-left: 10rem;
+    }
+
+    .main__section .main__section__row .column__headline {
+        padding-left: 0;
+    }
+
+    #contact .column__headline {
+        padding-left: 0;
+    }
+
+    .main__section__row {
+        padding: 0 10rem;
+        width: 100%;
     }
 }

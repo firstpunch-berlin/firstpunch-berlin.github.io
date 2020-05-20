@@ -138,8 +138,20 @@ hr {
 .main__section {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     width: 100%;
+}
+
+/* #services {
+    margin-top: 1rem;
+} */
+
+#services .main__section__row--dark {
+    padding-top: 1rem;
+}
+
+#about .column__headline.column-headline--dark {
+    padding-top: 1rem;
 }
 
 .main__section__h1 {

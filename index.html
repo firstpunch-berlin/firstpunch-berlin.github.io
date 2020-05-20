@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Punch Fight Choreography</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Julius+Sans+One&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Julius+Sans+One:wght@400;700&family=Montserrat&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -35,9 +32,12 @@
         </nav>
     </header>
     <main class="main">
+        <div class="main__parallax-image-1">
+            <h1 class="parallax-image__headline">Services</h1>
+        </div>
         <section class="main__section" id="services">
-            <h1 class="main__section__h1">Services</h1>
-            <div class="main__section__row row--margin-bottom">
+            <!-- <h1 class="main__section__h1">Services</h1> -->
+            <div class="main__section__row">
                 <div class="main__section__column-left">
                     <h2 class="column__headline">Choreografie</h2>
                     Wir entwerfen Choreographien für Film / Fernsehen und Theaterproduktionen und betreuen diese auf
@@ -57,7 +57,7 @@
                     prepare the actors specifically for these situations.
                 </div>
             </div>
-            <div class="main__section__row">
+            <div class="main__section__row main__section__row--dark">
                 <div class="main__section__column-left">
                     <h2 class="column__headline">Training für Schauspieler*innen</h2>
                     Wir bereiten Schauspieler*innen auf Kampfsituationen aller Art vor.
@@ -81,11 +81,14 @@
                 </div>
             </div>
         </section>
+        <div class="main__parallax-image-2">
+            <h1 class="parallax-image__headline">About Us</h1>
+        </div>
         <section class="main__section" id="about">
-            <figure class="about__figure">
+            <!-- <figure class="about__figure">
                 <img class="img-responsive img-about" src="assets/img/thomas_flo.jpg" alt="" srcset="">
                 <figcaption class="about__figcaption">Thomas, Florian</figcaption>
-            </figure>
+            </figure> -->
 
             <h2 class="column__headline">Thomas Schubert</h2>
             <div class="main__section__row">
@@ -119,8 +122,8 @@
                     </p>
                 </div>
             </div>
-            <h2 class="column__headline">Florian Bartholomäi</h2>
-            <div class="main__section__row">
+            <h2 class="column__headline column-headline--dark">Florian Bartholomäi</h2>
+            <div class="main__section__row main__section__row--dark">
                 <div class="main__section__column-left">
                     <p>
                         Florian kam 2004 durch die Kampfkunst zum Schauspiel und ist seither in zahlreichen Filmen,
@@ -155,28 +158,39 @@
             </div>
             </div>
         </section>
+        <div class="main__parallax-image-3">
+            <h1 class="parallax-image__headline">Contact</h1>
+        </div>
         <section class="main__section" id="contact">
-            <h1 class="main__section__h1">Contact</h1>
-            <div class="main__section__row">
-                <div class="main__section__column-left">
-                    <h2 class="column__headline">Email</h2>
-                    <a class="contact__link" href="mailto:firstpunchberlin@gmail.com">firstpunchberlin@gmail.com</a>
+            <div class="main__section__column">
+                <div class="main__section__column-inner">
+                    <address class="main__contact-address"> 
+                        <div class="main__section_p contact-email">
+                            <h1 class="column__headline">Email: </h1>
+                            <a class="contact__link" href="mailto:firstpunchberlin@gmail.com">firstpunchberlin@gmail.com</a>
+                        </div>
+                        Wing Tai Schule<br>
+                        Mehringdamm 64 <br>
+                        10961 Berlin <br>
+                    </address>
+                </div>
+                <div class="contact__social-links">
+                    <a href="https://www.youtube.com/channel/UCb7HtlrZTrvXvcfZPPaFmbQ" class="social-link" target="_blank">
+                        <span class="social-link__icon"><img class="social-icon" src="assets/img/youtube_social_icon_dark.png"
+                                alt="Instagram Logo"></span><span class="social-link__text">YouTube</span>
+                    </a>
+                    <a href="https://www.instagram.com/thomas._schubert/" class="social-link" target="_blank">
+                        <span class="social-link__icon"><img class="social-icon" src="assets/img/glyph-logo_May2016.png"
+                                alt="Instagram Logo"></span><span class="social-link__text">Instagram</span>
+                    </a>
                 </div>
             </div>
         </section>
+        <div class="main__parallax-image-1">
+        </div>
     </main>
     <hr>
     <footer class="footer">
-        <div class="footer__social-links">
-            <a href="https://www.youtube.com/channel/UCb7HtlrZTrvXvcfZPPaFmbQ" class="social-link" target="_blank">
-                <span class="social-link__icon"><img class="social-icon" src="assets/img/youtube_social_icon_dark.png"
-                        alt="Instagram Logo"></span><span class="social-link__text">YouTube</span>
-            </a>
-            <a href="https://www.instagram.com/thomas._schubert/" class="social-link" target="_blank">
-                <span class="social-link__icon"><img class="social-icon" src="assets/img/glyph-logo_May2016.png"
-                        alt="Instagram Logo"></span><span class="social-link__text">Instagram</span>
-            </a>
-        </div>
         <hr style="width: 100%;">
         <div class="footer__legal">
             <a href="imprint.html" class="legal__link">Impressum</a>
